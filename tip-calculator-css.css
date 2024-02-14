@@ -120,6 +120,12 @@ input.invalid {
 
 .tip-input {
     margin: 40px 0 40px 0;
+    border: none;
+}
+
+legend {
+    font-size: .8rem;
+    color: var(--dark-grayish-cyan);
 }
 
 .button-container {
