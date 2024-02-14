@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Tip Calculator"/>
+        <title>Tip Calculator</title>
+        <link rel="stylesheet" href="tip-calculator-css.css"/>
+    </head>
+    <body>
+        <main>
+            <img src="images/logo.svg" alt="splitter logo"/>
+            <div class="main-container">
+                <div class="input-container">
+                    <label for="bill-input">
+                        <div class="label-container">
+                            Bill <span id="error">Invalid input</span>
+                        </div>
+                        <input id="bill-input" class="input-style" type="number" placeholder="0"/>
+                    </label>
+                    <label class="tip-input">
+                        Select Tip %
+                        <div class="button-container">
+                            <input id="tip5" type="button" value="5%"/>
+                            <input id="tip10" type="button" value="10%"/>
+                            <input id="tip15" type="button" value="15%"/>
+                            <input id="tip25" type="button" value="25%"/>
+                            <input id="tip50" type="button" value="50%"/>
+                            <input id="custom-input" type="tel" placeholder="Custom" maxlength="5"/>
+                        </div>    
+                    </label>
+                    <label for="people-input">
+                        <div class="label-container">
+                            Number Of People <span id="zero">Can't be zero</span>
+                        </div>
+                        <input id="people-input" class="input-style" type="number" placeholder="0"/>
+                    </label>
+                    <button id="calculate-btn" type="button">Calculate Tip</button>
+                    <span id="choose-tip">Choose tip amount</span>
+                </div>
+                <div class="output-container">
+                    <div class="amount-container">
+                        <div class="tip-label">
+                            Tip Amount
+                            <p class="per-person">/ person</p>
+                        </div>
+                        <div id="tip-amount" class="amount-display">$0.00</div>
+                    </div>
+                    <div class="amount-container">
+                        <div class="tip-label">
+                            Total
+                            <p class="per-person">/ person</p>
+                        </div>
+                        <div id="total-amount" class="amount-display">$0.00</div>
+                    </div>
+                    <button id="reset-btn" type="button">RESET</button>
+                </div>
+            </div>
+        </main>
+        <script src="tip-calculator-js.js"></script>
+    </body>
+</html>
